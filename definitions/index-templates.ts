@@ -184,6 +184,18 @@ export const action = {
                     "amount": {"type": "float"}
                 }
             }
+
+
+            // eosio::undelegatebw
+            "@newdoc": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "decision_id": {"type": "integer"}
+                    "username": {"type": "keyword"},
+                    "action": {"type": "keyword"},
+                    "signed_doc": {"type": "object"}
+                }
+            }
         }
     }
 };
