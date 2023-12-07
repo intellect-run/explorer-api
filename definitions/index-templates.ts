@@ -185,6 +185,7 @@ export const action = {
                 }
             },
 
+
             // eosio::undelegatebw
             "@newdoc": {
                 "properties": {
