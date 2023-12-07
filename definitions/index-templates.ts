@@ -194,6 +194,15 @@ export const action = {
                     "action": {"type": "keyword"},
                     "signed_doc": {"type": "object"}
                 }
+            },
+
+            // eosio::votefor
+            "@votefor": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "member": {"type": "keyword"},
+                    "decision_id": {"type": "integer"}
+                }
             }
         }
     }
