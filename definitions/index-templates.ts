@@ -183,7 +183,7 @@ export const action = {
                     "unstake_net_quantity": {"type": "float"},
                     "amount": {"type": "float"}
                 }
-            }
+            },
 
 
             // eosio::undelegatebw
