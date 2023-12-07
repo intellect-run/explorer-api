@@ -77,7 +77,7 @@ export const action = {
             "act.authorization.actor": {"type": "keyword"},
             "act.account": {"type": "keyword"},
             "act.name": {"type": "keyword"},
-            "act.data": {"enabled": false},
+            "act.data": {"enabled": true},
             "block_num": {"type": "long"},
             "block_id": {"type": "keyword"},
             "action_ordinal": {"type": "long"},
