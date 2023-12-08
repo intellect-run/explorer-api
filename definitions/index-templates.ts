@@ -186,18 +186,24 @@ export const action = {
             },
 
             // eosio::undelegatebw
-            "@newdoc": {
+            "@exec": {
                 "properties": {
+                    "executer": {"type": "keyword"},
                     "coopname": {"type": "keyword"},
                     "decision_id": {"type": "integer"},
-                    "username": {"type": "keyword"},
-                    "action": {"type": "keyword"},
-                    "signed_doc": {"type": "object"}
                 }
             },
 
             // eosio::votefor
             "@votefor": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "member": {"type": "keyword"},
+                    "decision_id": {"type": "integer"}
+                }
+            }
+
+            "@voteagainst": {
                 "properties": {
                     "coopname": {"type": "keyword"},
                     "member": {"type": "keyword"},
