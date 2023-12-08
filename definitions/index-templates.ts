@@ -201,7 +201,7 @@ export const action = {
                     "member": {"type": "keyword"},
                     "decision_id": {"type": "integer"}
                 }
-            }
+            },
 
             "@voteagainst": {
                 "properties": {
