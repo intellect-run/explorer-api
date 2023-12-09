@@ -77,7 +77,7 @@ export const action = {
             "act.authorization.actor": {"type": "keyword"},
             "act.account": {"type": "keyword"},
             "act.name": {"type": "keyword"},
-            "act.data": {"enabled": true},
+            "act.data": {"enabled": false},
             "block_num": {"type": "long"},
             "block_id": {"type": "keyword"},
             "action_ordinal": {"type": "long"},
@@ -193,6 +193,47 @@ export const action = {
                     "decision_id": {"type": "integer"},
                 }
             },
+
+            "@statement": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "username": {"type": "keyword"},
+                    "action": {"type": "keyword"},
+                    "decision_id": {"type": "integer"},
+                    "batch_id": {"type": "integer"},
+                    "statement": {"enabled": false},
+                }
+            },
+
+            "@act": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "username": {"type": "keyword"},
+                    "action": {"type": "keyword"},
+                    "decision_id": {"type": "integer"},
+                    "batch_id": {"type": "integer"},
+                    "act": {"enabled": false},
+                }
+            },
+
+            "@decision": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "username": {"type": "keyword"},
+                    "action": {"type": "keyword"},
+                    "decision_id": {"type": "integer"},
+                    "batch_id": {"type": "integer"},
+                    "decision": {"enabled": false},
+                }
+            },
+            "@batch": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "action": {"type": "keyword"},
+                    "batch_id": {"type": "integer"},
+                }
+            },
+
 
             // eosio::votefor
             "@votefor": {
