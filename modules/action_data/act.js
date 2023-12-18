@@ -4,6 +4,22 @@ const hyperionModule = {
     action: 'act',
     parser_version: ['3.2', '2.1','1.8','1.7'],
     defineQueryPrefix: 'act',
+
+    mappings: {
+        action: {
+            "@act": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "username": {"type": "keyword"},
+                    "action": {"type": "keyword"},
+                    "decision_id": {"type": "long"},
+                    "batch_id": {"type": "long"},
+                    "act": {"enabled": false},
+                }
+            }
+        }
+    },
+
     handler: (action) => {
         const data = action['act']['data'];
         

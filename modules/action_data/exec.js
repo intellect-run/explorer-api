@@ -4,6 +4,19 @@ const hyperionModule = {
     action: 'exec',
     parser_version: ['3.2', '2.1','1.8','1.7'],
     defineQueryPrefix: 'exec',
+
+    mappings: {
+        action: {
+            "@exec": {
+                "properties": {
+                    "executer": {"type": "keyword"},
+                    "coopname": {"type": "keyword"},
+                    "decision_id": {"type": "long"},
+                }
+            }
+        }
+    },
+
     handler: (action) => {
         const data = action['act']['data'];
         

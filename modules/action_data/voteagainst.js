@@ -4,6 +4,19 @@ const hyperionModule = {
     action: 'voteagainst',
     parser_version: ['3.2', '2.1','1.8','1.7'],
     defineQueryPrefix: 'voteagainst',
+
+    mappings: {
+        action: {
+            "@voteagainst": {
+                "properties": {
+                    "coopname": {"type": "keyword"},
+                    "member": {"type": "keyword"},
+                    "decision_id": {"type": "long"}
+                }
+            }
+        }
+    },
+
     handler: (action) => {
         const data = action['act']['data'];
         
