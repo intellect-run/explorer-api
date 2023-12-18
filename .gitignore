@@ -68,8 +68,8 @@ helpers/**/*.js.map
 interfaces/**/*.js
 interfaces/**/*.js.map
 
-modules/**/*.js
-modules/**/*.js.map
+#modules/**/*.js
+#modules/**/*.js.map
 
 addons/**/*.js
 addons/**/*.js.map
