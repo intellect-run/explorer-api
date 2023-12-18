@@ -53,12 +53,12 @@ class HyperionModuleLoader {
                     const key = `${_module.contract}::${_module.action}`;
                     if (this.chainMappings.has(key)) {
                         if (this.chainMappings.get(key) === '*' && _module.chain === chainID) {
-                            // console.log('Overwriting module ' + key + ' for ' + _module.chain);
+                            console.log('Overwriting module ' + key + ' for ' + _module.chain);
                             this.includeModule(_module);
                             this.chainMappings.set(key, _module.chain);
                         }
                     } else {
-                        // console.log('Including module ' + key + ' for ' + _module.chain);
+                        console.log('Including module ' + key + ' for ' + _module.chain);
                         this.includeModule(_module);
                         this.chainMappings.set(key, _module.chain);
                     }

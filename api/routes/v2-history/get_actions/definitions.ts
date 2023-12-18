@@ -12,7 +12,14 @@ export const extendedActions = new Set([
     "buyrambytes",
     "delegatebw",
     "undelegatebw",
-    "voteproducer"
+    "voteproducer",
+    'statement',
+    'decision',
+    'batch'
+    'act',
+    'exec',
+    'votefor',
+    'voteagainst'
 ]);
 
 export const primaryTerms = [
