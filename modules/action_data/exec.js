@@ -11,7 +11,7 @@ const hyperionModule = {
                 "properties": {
                     "executer": {"type": "keyword"},
                     "coopname": {"type": "keyword"},
-                    "decision_id": {"type": "long"},
+                    "decision_id": {"type": "long"}
                 }
             }
         }
@@ -26,7 +26,7 @@ const hyperionModule = {
             decision_id: data.decision_id,
         };
 
-        delete action['act']['data'];
+        
     }
 };
 

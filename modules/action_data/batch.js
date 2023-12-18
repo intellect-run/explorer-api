@@ -11,7 +11,7 @@ const hyperionModule = {
                 "properties": {
                     "coopname": {"type": "keyword"},
                     "action": {"type": "keyword"},
-                    "batch_id": {"type": "long"},
+                    "batch_id": {"type": "long"}
                 }
             }
         }
@@ -26,7 +26,7 @@ const hyperionModule = {
             batch_id: data.batch_id,
         };
 
-        delete action['act']['data'];
+        
     }
 };
 

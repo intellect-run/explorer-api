@@ -26,7 +26,7 @@ const hyperionModule = {
             decision_id: decision_id
         };
 
-        delete action['act']['data'];
+        
     }
 };
 

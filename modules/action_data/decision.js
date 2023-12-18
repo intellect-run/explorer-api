@@ -14,7 +14,7 @@ const hyperionModule = {
                     "action": {"type": "keyword"},
                     "decision_id": {"type": "long"},
                     "batch_id": {"type": "long"},
-                    "decision": {"enabled": false},
+                    "decision": {"enabled": false}
                 }
             }
         }
@@ -32,7 +32,7 @@ const hyperionModule = {
             decision: data.decision
         };
 
-        delete action['act']['data'];
+        
     }
 };
 
