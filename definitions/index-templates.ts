@@ -190,7 +190,7 @@ export const action = {
                 "properties": {
                     "executer": {"type": "keyword"},
                     "coopname": {"type": "keyword"},
-                    "decision_id": {"type": "integer"},
+                    "decision_id": {"type": "long"},
                 }
             },
 
@@ -199,8 +199,8 @@ export const action = {
                     "coopname": {"type": "keyword"},
                     "username": {"type": "keyword"},
                     "action": {"type": "keyword"},
-                    "decision_id": {"type": "integer"},
-                    "batch_id": {"type": "integer"},
+                    "decision_id": {"type": "long"},
+                    "batch_id": {"type": "long"},
                     "statement": {"enabled": false},
                 }
             },
@@ -210,8 +210,8 @@ export const action = {
                     "coopname": {"type": "keyword"},
                     "username": {"type": "keyword"},
                     "action": {"type": "keyword"},
-                    "decision_id": {"type": "integer"},
-                    "batch_id": {"type": "integer"},
+                    "decision_id": {"type": "long"},
+                    "batch_id": {"type": "long"},
                     "act": {"enabled": false},
                 }
             },
@@ -221,8 +221,8 @@ export const action = {
                     "coopname": {"type": "keyword"},
                     "username": {"type": "keyword"},
                     "action": {"type": "keyword"},
-                    "decision_id": {"type": "integer"},
-                    "batch_id": {"type": "integer"},
+                    "decision_id": {"type": "long"},
+                    "batch_id": {"type": "long"},
                     "decision": {"enabled": false},
                 }
             },
@@ -230,7 +230,7 @@ export const action = {
                 "properties": {
                     "coopname": {"type": "keyword"},
                     "action": {"type": "keyword"},
-                    "batch_id": {"type": "integer"},
+                    "batch_id": {"type": "long"},
                 }
             },
 
@@ -240,7 +240,7 @@ export const action = {
                 "properties": {
                     "coopname": {"type": "keyword"},
                     "member": {"type": "keyword"},
-                    "decision_id": {"type": "integer"}
+                    "decision_id": {"type": "long"}
                 }
             },
 
@@ -248,7 +248,7 @@ export const action = {
                 "properties": {
                     "coopname": {"type": "keyword"},
                     "member": {"type": "keyword"},
-                    "decision_id": {"type": "integer"}
+                    "decision_id": {"type": "long"}
                 }
             }
         }
