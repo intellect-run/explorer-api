@@ -15,7 +15,7 @@ export const extendedActions = new Set([
     "voteproducer",
     'statement',
     'decision',
-    'batch'
+    'batch',
     'act',
     'exec',
     'votefor',
