@@ -186,71 +186,71 @@ export const action = {
             },
 
             // eosio::undelegatebw
-            "@exec": {
-                "properties": {
-                    "executer": {"type": "keyword"},
-                    "coopname": {"type": "keyword"},
-                    "decision_id": {"type": "long"},
-                }
-            },
+            // "@exec": {
+            //     "properties": {
+            //         "executer": {"type": "keyword"},
+            //         "coopname": {"type": "keyword"},
+            //         "decision_id": {"type": "long"},
+            //     }
+            // },
 
-            "@statement": {
-                "properties": {
-                    "coopname": {"type": "keyword"},
-                    "username": {"type": "keyword"},
-                    "action": {"type": "keyword"},
-                    "decision_id": {"type": "long"},
-                    "batch_id": {"type": "long"},
-                    "statement": {"enabled": false},
-                }
-            },
+            // "@statement": {
+            //     "properties": {
+            //         "coopname": {"type": "keyword"},
+            //         "username": {"type": "keyword"},
+            //         "action": {"type": "keyword"},
+            //         "decision_id": {"type": "long"},
+            //         "batch_id": {"type": "long"},
+            //         "statement": {"enabled": false},
+            //     }
+            // },
 
-            "@act": {
-                "properties": {
-                    "coopname": {"type": "keyword"},
-                    "username": {"type": "keyword"},
-                    "action": {"type": "keyword"},
-                    "decision_id": {"type": "long"},
-                    "batch_id": {"type": "long"},
-                    "act": {"enabled": false},
-                }
-            },
+            // "@act": {
+            //     "properties": {
+            //         "coopname": {"type": "keyword"},
+            //         "username": {"type": "keyword"},
+            //         "action": {"type": "keyword"},
+            //         "decision_id": {"type": "long"},
+            //         "batch_id": {"type": "long"},
+            //         "act": {"enabled": false},
+            //     }
+            // },
 
-            "@decision": {
-                "properties": {
-                    "coopname": {"type": "keyword"},
-                    "username": {"type": "keyword"},
-                    "action": {"type": "keyword"},
-                    "decision_id": {"type": "long"},
-                    "batch_id": {"type": "long"},
-                    "decision": {"enabled": false},
-                }
-            },
-            "@batch": {
-                "properties": {
-                    "coopname": {"type": "keyword"},
-                    "action": {"type": "keyword"},
-                    "batch_id": {"type": "long"},
-                }
-            },
+            // "@decision": {
+            //     "properties": {
+            //         "coopname": {"type": "keyword"},
+            //         "username": {"type": "keyword"},
+            //         "action": {"type": "keyword"},
+            //         "decision_id": {"type": "long"},
+            //         "batch_id": {"type": "long"},
+            //         "decision": {"enabled": false},
+            //     }
+            // },
+            // "@batch": {
+            //     "properties": {
+            //         "coopname": {"type": "keyword"},
+            //         "action": {"type": "keyword"},
+            //         "batch_id": {"type": "long"},
+            //     }
+            // },
 
 
-            // eosio::votefor
-            "@votefor": {
-                "properties": {
-                    "coopname": {"type": "keyword"},
-                    "member": {"type": "keyword"},
-                    "decision_id": {"type": "long"}
-                }
-            },
+            // // eosio::votefor
+            // "@votefor": {
+            //     "properties": {
+            //         "coopname": {"type": "keyword"},
+            //         "member": {"type": "keyword"},
+            //         "decision_id": {"type": "long"}
+            //     }
+            // },
 
-            "@voteagainst": {
-                "properties": {
-                    "coopname": {"type": "keyword"},
-                    "member": {"type": "keyword"},
-                    "decision_id": {"type": "long"}
-                }
-            }
+            // "@voteagainst": {
+            //     "properties": {
+            //         "coopname": {"type": "keyword"},
+            //         "member": {"type": "keyword"},
+            //         "decision_id": {"type": "long"}
+            //     }
+            // }
         }
     }
 };
