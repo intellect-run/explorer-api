@@ -23,7 +23,7 @@ const hyperionModule = {
         action['@voteagainst'] = {
             coopname: data.coopname,
             member: data.member,
-            decision_id: decision_id
+            decision_id: data.decision_id
         };
 
         
